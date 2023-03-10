@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.dashboard {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #272727;
+}
+
+.dashboard-menu {
+    width: 300px;
+}
+
+.icon {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.icon-img {
+    height: 150px;
+    width: 150px;
+    font-weight: bolder;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.icon-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-menu-links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.dashboard-menu-links>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.dashboard-menu-links>div:hover, .dashboard-head-right>*:hover {
+    cursor: pointer;
+    color: #FF8D24;
+}
+
+.dashboard-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding: 20px;
+}
+
+.dashboard-head {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-head-left {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-head-right {
+    width: 200px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dashboard-head-right>div {
+    width: 35px;
+    height: 33px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dashboard-head-right>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-main-content {
+    height: 50vh;
+}
+
+.dashboard-main-content {
+    display: flex;
+    align-items: stretch;
+}
+
+.dashboard-main-content-left {
+    flex: 1;
+}
+
+.dashboard-main-content-right {
+    flex: 1;
+    background-color: #151515;
+    border-radius: 12px;
+    color: white;
+    padding: 16px;
+}
+
+.coming-soon {
+    display: flex;
+    height: 90%;
+    margin-top: 30px;
+}
+
+.coming-soon-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.coming-soon-right {
+    flex: 1;
+}
+
+.coming-soon-right>img {
+    width: 100%;
+    height: 100%;
+}
