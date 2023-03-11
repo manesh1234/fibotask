@@ -101,8 +101,8 @@ ul, li {
 }
 
 .dashboard-head-right>div {
-    width: 35px;
-    height: 33px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -123,10 +123,59 @@ ul, li {
 
 .dashboard-main-content-left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.part-1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part-1-subpart {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.part-1-subpart-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 141, 36, 0.45);
+    border-radius: 50%;
+}
+
+.part-1-subpart-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.part-1-subpart-right>span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.part-2 {
+    margin-top: 40px;
+    height: 100%;
 }
 
 .dashboard-main-content-right {
-    flex: 1;
+    width: 500px;
     background-color: #151515;
     border-radius: 12px;
     color: white;
@@ -155,3 +204,40 @@ ul, li {
     width: 100%;
     height: 100%;
 }
+
+.quick-actions{
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.quick-actions-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 210px;
+    position: relative;
+    height: 100%;
+    background-color: #2D2D2D;
+    border-radius: 13px;
+    margin-right: 20px;
+}
+
+.quick-actions-box-icon{
+    position: absolute;
+    top: -12px;
+    left: 86px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 141, 36, 0.45);
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+    

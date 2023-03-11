@@ -1,0 +1,164 @@
+.hero {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.hero>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero .left_side {
+    color: white;
+    background-color: #272727;
+}
+
+.hero .left_side>div {
+    max-width: 470px;
+    text-align: center;
+}
+
+.hero .left_side>div>img {
+    display: block;
+    margin: 0 auto;
+    width: 345px;
+    height: 230px;
+    margin-bottom: 6rem;
+}
+
+.hero .left_side>div h3 {
+    font-size: 1.75rem;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.hero .left_side>div h3+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.hero .right_side {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.hero .right_side .logo {
+    width: 185px;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero .right_side h3 {
+    margin-top: 6rem;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.hero .right_side h3+p {
+    color: #676767;
+    line-height: 18px;
+    font-weight: 400px;
+    font-size: 1rem;
+    margin: 1rem 0 3rem 0;
+}
+
+.hero .right_side hr {
+    margin: 3rem auto;
+    border: 1px solid #5B5B5B;
+    width: 60%;
+    position: relative;
+    overflow: visible;
+    background: transparent;
+}
+
+.hero .right_side hr::after {
+    content: "OR";
+    font-size: 14px;
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #212121;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.hero .right_side .google_btn {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginForm {
+    max-width: 350px;
+    width: 100%;
+}
+
+.LoginForm button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 2px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #FF8D24;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+.LoginForm button:hover, .hero .right_side .google_btn:hover {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.LoginForm>div {
+    background: #333333;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 6px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.LoginForm>div:focus {
+    outline: none;
+}
+
+.LoginForm>div span {
+    padding: 0 0.75rem;
+    font-size: 18px;
+}
+
+.LoginForm>div input {
+    background: transparent;
+    border: none;
+    padding-left: 1rem;
+    border-left: 1px solid #828282;
+    color: #FF8D24;
+    font-size: 18px;
+}
+
+.LoginForm>div input::placeholder {
+    color: #828282;
+}

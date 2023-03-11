@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    color: white;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("../assets/bg.png") no-repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    background: rgba(30, 28, 27, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hero .container {
+    z-index: 1;
+    background-color: #2C2C2C;
+    border-radius: 20px 20px 0 0;
+    margin-top: auto;
+    padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.hero h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.2308px;
+    line-height: 19px;
+    color: #F1F0EF;
+}
+
+.hero .input_box+hr {
+    margin: 2rem auto;
+    border: 1px solid #5B5B5B;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    background: transparent;
+}
+
+.hero .input_box+hr::after {
+    content: "OR";
+    font-size: 14px;
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c2c2c;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.hero .google_btn+p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hero .google_btn+p span {
+    color: #FF8D24;
+}
+
+.hero .terms {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 6rem;
+    line-height: 20px;
+}
+
+.hero .terms+button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #FF8D24;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+.hero .terms+button:hover {
+    cursor: pointer;
+}
+
+.hero button+hr {
+    margin: 2rem auto 0.5rem auto;
+    border: 1px solid #F1F0EF;
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.input_box {
+    background: #333333;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 6px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-top: 2rem;
+}
+
+.input_box input:focus {
+    outline: none;
+}
+
+.input_box span {
+    padding: 0 0.75rem;
+}
+
+.input_box input {
+    background: transparent;
+    border: none;
+    padding-left: 1rem;
+    border-left: 1px solid #828282;
+    color: #FF8D24;
+    font-size: 18px;
+}
+
+.input_box input::placeholder {
+    color: #828282;
+}
+
+.google_btn {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid #5B5B5B;
+    border-radius: 10px;
+}
+
+.google_btn:hover {
+    cursor: pointer;
+}
+
+.google_btn img {
+    width: 24px;
+}
