@@ -8,9 +8,9 @@ import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-    const screenWidth = useScreenWidth();
-    const [isLoggedIn, setIsLoggedIn] = useState(null);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [text, setText] = useState('');
+    const screenWidth = useScreenWidth();
     return (
         <AuthContext.Provider value={{
             isLoggedIn: isLoggedIn,

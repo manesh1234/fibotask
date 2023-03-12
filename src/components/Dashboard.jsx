@@ -49,8 +49,9 @@ const Dashboard = () => {
         <div className="dashboard">
             <div className="dashboard-menu">
                 <div className="icon">
-                    <div className='icon-img'><img src={logo} alt="logo" /></div>
-                    <div><h2>FI<span style={{ color: '#FF8D24' }}>T</span>NESS</h2></div>
+                    <div>
+                        <img src={logo} alt="dashboard-icon" />
+                    </div>
                 </div>
                 <div className='dashboard-menu-links'>
                     <div style={{ color: '#FF8D24' }}><RxDashboard /> Dashboard</div>

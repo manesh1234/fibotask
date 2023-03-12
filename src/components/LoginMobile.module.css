@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
-    color: white;
-}
-
 .hero {
     min-height: 100vh;
     background: url("../assets/bg.png") no-repeat;
